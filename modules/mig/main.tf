@@ -114,7 +114,8 @@ resource "google_compute_region_instance_group_manager" "mig" {
     ignore_changes        = [
       distribution_policy_zones,
       target_size,
-      version
+      version,
+      fingerprint,
     ]
   }
 
